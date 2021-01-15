@@ -1,0 +1,34 @@
+8051 BASIC COMPONENTS:
+* 4k byte internal rom
+* 128 byte internal ram
+* four 8 bit i/o ports (p0-p3)
+* two 16 bit timers/counters
+* one serial interface 
+
+other 8051 fectures
+* only 1 on chip oscillator (external crystal)
+* 6 interrupt sources (2 external, 3 internal, reset)
+* 64 external code (program) memory(only read)PSEN
+* 64 external data memory (can be read and write)by RD,WR
+* code memory is selectable by EA (internal and external)
+* we may have external memoty as data and code
+
+              IMPORTANT PINS (IO PORTS)
+* one of the most useful features af the 8051 is that it contains four i/o ports
+
+* port 0 (pins 32-39):p0(p0.0-p0.7)
+  * 8 bit R/W general purpose I/O
+  * "or" acts as a multiplexed low byte address and data bus for external memory design
+
+* port 1 (pin 1-8) p1(p1.0-p1.7)
+  *only 8 bit R/W general purpose I/O
+  
+* port 2(pin 21-28) p2(p2.0-p2.7)
+  *only 8 bit R/W general purpose I/O
+  *"or high" byte of the address bus for external memory design
+
+* port 3 (pin 10-17) p3(p3.0-p3.7)
+  *general purpose I/O
+  *if not used any of the internal peripherals (timers)or external interrupts
+
+*EACT PORT CAN BE USED AS INPUT AND OUTPUT (BIDRECTIONAL)  
